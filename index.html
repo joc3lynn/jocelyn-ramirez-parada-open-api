@@ -5,14 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Jocelyn Ramirez-Parada">
     <link href="css/index.css" rel="stylesheet">
-    <header>
-        <h1>Dog or Cat?</h1>
-    </header>
     <body>
+        <header>
+            <nav id="bar">
+                <a class="nav-link" href="random.html">Random Cat Image Generator</a>
+            </nav>
+        </header>
+        <h1 id="Title">Cat Encyclopedia</h1>
+        <h2 id="Description">Want to look for what kind of cat to adopt? Or just want to learn more about cats? </h2>
         <section>
+            <h2>Look Up A Cat Breed to Learn More!</h2>
         </section>
-        <section>
-            <h2>Click the Button to get a Cat or a Dog</h2>
+        <section id="Search">
+            <h2>Select a Cat Breed from the Drop-Down Menu: </h2>
+            <form name="breedMenu">
+                <label for="breedType">Breeds: </label>
+                <select onchange="breedPhoto(value)" name="breedType" id="breedType">
+                </select>
+                <!-- <input type="text" placeholder="Search.." name="search" id="lookUp" required="true"><br> <!-- unsure if I need true here -->
+            </form>
+            <div>
+                <img id="breedImage">
+            </div>
+        </section>
+        <section id="Info">
+            <div>
+                <div id="breed_char"></div>
+                <div id="breed_info"></div>
+                <a id="info_link" target="_blank"></a>
+            </div>
         </section>
     </body>
     <script src="js/index.js"></script>
