@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Jocelyn Ramirez-Parada">
-    <link href="css/index.css" rel="stylesheet">
+    <head>
+        <title>Open Api - Cat Encyclopedia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Jocelyn Ramirez-Parada">
+        <link href="css/index.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
     <body>
         <header>
-            <nav id="bar">
-                <a class="nav-link" href="random.html">Random Cat Image Generator</a>
-            </nav>
+                <nav >
+                    <ul id="Bar">
+                        <li><a id="Heading" class="nav-link" href="index.html"><img id="logo" src='./images/cat1.png'style="width:90px;height:110px;vertical-align:bottom;"/>Cats</a></li>
+                        <li><a id="Heading2" class="nav-link" href="random.html" target=_self>Random Cat Image Generator</a></li>
+                    </ul>
+                </nav>
         </header>
         <h1 id="Title">Cat Encyclopedia</h1>
-        <h2 id="Description">Want to look for what kind of cat to adopt? Or just want to learn more about cats? </h2>
-        <section>
-            <h2>Look Up A Cat Breed to Learn More!</h2>
+        <section id="subHeadings">
+        <h2>Want to look for what kind of cat to adopt? Or just want to know more about cats?</h2>
+        <h2>Select a Cat Breed from the Drop-Down Menu to Learn More! </h2>
         </section>
         <section id="Search">
-            <h2>Select a Cat Breed from the Drop-Down Menu: </h2>
             <form name="breedMenu">
                 <label for="breedType">Breeds: </label>
                 <select onchange="breedPhoto(value)" name="breedType" id="breedType">
                 </select>
-                <!-- <input type="text" placeholder="Search.." name="search" id="lookUp" required="true"><br> <!-- unsure if I need true here -->
             </form>
             <div>
                 <img id="breedImage">
