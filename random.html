@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head></head>
+    <title>Open Api - Random Cat Image Generator</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Jocelyn Ramirez-Parada">
     <link href="css/index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <body>
         <header>
-            <nav id="bar">
-                <a class="nav-link" href="index.html">Go to Homepage</a>
+            <nav id="Bar">
+                <li><a id="Heading" class="nav-link" href="index.html"><img id="logo" src='./images/cat1.png'style="width:90px;height:110px;vertical-align:bottom;"/>Cats</a></li>
             </nav>
         </header>
         <h1 id="Title">Random Cat Image Generator</h1>
-        <section>
-            <h2>Click the Button to get a random cat image!</h2>
+        <section id="subHeadings">
+            <h2>Just want to look at cats?</h2>
+            <h2>Click the button to generate a cat image!</h2>
         </section>
         <div id="imageSection">
             <img id="rando_image"><br>
             <button id="getCat">Cat!</button>
-          </div>
+        </div>
     </body>
     <script src="js/random.js"></script>
 </html>
